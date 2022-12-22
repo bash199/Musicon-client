@@ -12,6 +12,7 @@ function App() {
    useEffect(() => {
       if (localStorage.getItem("userValues")) navigate("/");
       else if (!localStorage.getItem("userValues")) navigate("/login");
+      // eslint-disable-next-line
    }, []);
 
    return (
